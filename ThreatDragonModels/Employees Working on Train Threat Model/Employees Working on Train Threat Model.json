@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 50,
-              "y": 140
+              "x": -320,
+              "y": 200
             },
             "size": {
               "width": 112.5,
@@ -147,8 +147,8 @@
                 "text": "MS office online / teams"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -244,12 +244,86 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9da37c9d-946e-43a6-885a-553801a5aab6",
+                  "title": "Phishing Login Pages",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": " An attacker intercepts the connection and redirects the employee to a fake Microsoft Office or OneDrive login page, capturing their credentials.",
+                  "mitigation": "Enable Multi-Factor Authentication (MFA), verify URLs before entering credentials, and use password managers to auto-fill only legitimate sites.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "5981caf6-5514-4ac3-8f46-a5ae16d57360",
+                  "title": "Denial of Document Edits",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "An employee can claim they never modified a document, making it difficult to track accountability in collaborative work.",
+                  "mitigation": "Enable audit logs in MS Office/OneDrive and require document approvals for sensitive edits.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "682ac475-cfb1-4eb4-84d1-995ccf456aa2",
+                  "title": "Service Overload on Cloud Servers",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": " Attackers flood Microsoft Office 365 or OneDrive services, making it impossible for employees to access critical files.",
+                  "mitigation": "Enable offline document access, keep local backups, and monitor service status via official Microsoft pages.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "9ffdade7-5bd9-43d3-ac89-06f2dcd7ad13",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "7b565bfd-c986-4e79-8bb0-07527df65f09",
+                  "title": "Session Hijacking",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker steals an active session token, allowing them to access MS Office/OneDrive as the employee.",
+                  "mitigation": " Enable automatic session timeouts, use MFA, and prevent session sharing across multiple devices.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -266,11 +340,13 @@
                 "text": "oneDrive"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -366,13 +442,46 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ba2adb0b-0c98-4fe2-a412-b557970e9149",
+                  "title": "Document Manipulation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "An attacker with access to shared files on OneDrive modifies critical documents, leading to incorrect or malicious content being used.",
+                  "mitigation": "Enable version history in OneDrive, restrict editing permissions, and implement digital signatures for document verification.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "cbbdb358-5304-4c60-892e-0cb028951f51",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -380,6 +489,238 @@
             "attrs": {
               "line": {
                 "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Loads / Saves documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Loads / Saves documents"
+            ],
+            "id": "1a29bd02-503f-4b3f-a4c0-c160144e444d",
+            "source": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
+            },
+            "target": {
+              "cell": "2e8476df-5322-4159-80a9-685cad33c055",
+              "port": "6c3818b4-29c9-47a8-a105-7b855cfe85ae"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 400
+              },
+              {
+                "x": 740,
+                "y": 360
+              },
+              {
+                "x": 770,
+                "y": 330
+              },
+              {
+                "x": 780,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Traffic routed through public Wi-Fi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5f8fae30-8386-46f3-bab0-198e9c78c125",
+                  "title": "Network Jamming Attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Attackers flood the public Wi-Fi with interference, making it impossible for employees to connect to MS Office or OneDrive.",
+                  "mitigation": " Use mobile hotspots instead of public Wi-Fi and retry with alternative networks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "dd26bc19-f2d9-4393-a935-45aeb4a91d8f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Traffic routed through public Wi-Fi"
+            ],
+            "id": "1b726a19-0b48-4407-a073-ada4d698e288",
+            "source": {
+              "cell": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
+              "port": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+            },
+            "target": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "e9795bd4-9f5a-46a0-8fd6-8379c3256717"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 200
+              },
+              {
+                "x": 540,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Accesses MS Word / Excel Online",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4839786f-4251-4dc2-a987-a97de1f5046a",
+                  "title": "Man-in-the-Middle",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": " An attacker intercepts network traffic between the employee and MS Office/OneDrive, modifying or injecting malicious data into shared documents.",
+                  "mitigation": "Use HTTPS-only sites, enforce VPN connections, and enable encryption on shared documents.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Accesses MS Word / Excel Online"
+            ],
+            "id": "742aa0a0-1b72-46a1-a10f-c14761db5518",
+            "source": {
+              "cell": "6c333eee-2b66-40fc-9ffe-e7dbb6918fad",
+              "port": "a5f79e94-b85b-4694-b8c3-9dbb9c27f4d3"
+            },
+            "target": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "bce3ab2f-5b4f-4fc4-8182-5afdc636b32e"
+            },
+            "vertices": [
+              {
+                "x": 40,
+                "y": 290
+              },
+              {
+                "x": 140,
+                "y": 270
+              },
+              {
+                "x": 210,
+                "y": 340
+              },
+              {
+                "x": 330,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -399,26 +740,53 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b17e1f7d-0882-480d-8f84-a7492027eba0",
+                  "title": "Unencrypted Public Wi-Fi Exposure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Employees working on unsecured public Wi-Fi risk exposing emails, passwords, and business files to attackers.",
+                  "mitigation": " Use VPNs, ensure sites use HTTPS, and encrypt local documents before uploading.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Connects via unsecured network"
             ],
             "id": "27089e1a-f6e7-42dd-aee6-c45cefe21fd2",
             "source": {
-              "cell": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
-              "port": "afccf7f8-a1d4-49f7-8efa-78950ef9adb8"
+              "cell": "6c333eee-2b66-40fc-9ffe-e7dbb6918fad",
+              "port": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
             },
             "target": {
               "cell": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
               "port": "3579c718-a49d-494a-843b-676d9ff37e0f"
             },
             "vertices": [
+              {
+                "x": 260,
+                "y": 180
+              },
+              {
+                "x": 310,
+                "y": 180
+              },
               {
                 "x": 400,
                 "y": 150
@@ -449,7 +817,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Loads / Saves documents",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -461,125 +829,17 @@
               "threats": []
             },
             "labels": [
-              "Loads / Saves documents"
+              "Data Flow"
             ],
-            "id": "1a29bd02-503f-4b3f-a4c0-c160144e444d",
-            "source": {
-              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
-              "port": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
-            },
-            "target": {
-              "cell": "2e8476df-5322-4159-80a9-685cad33c055",
-              "port": "6c3818b4-29c9-47a8-a105-7b855cfe85ae"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Traffic routed through public Wi-Fi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Traffic routed through public Wi-Fi"
-            ],
-            "id": "1b726a19-0b48-4407-a073-ada4d698e288",
-            "source": {
-              "cell": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
-              "port": "f319135a-0a1d-492d-87bf-9cfd09637d77"
-            },
-            "target": {
-              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
-              "port": "e9795bd4-9f5a-46a0-8fd6-8379c3256717"
-            },
-            "vertices": [
-              {
-                "x": 540,
-                "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Accesses MS Word / Excel Online",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Accesses MS Word / Excel Online"
-            ],
-            "id": "742aa0a0-1b72-46a1-a10f-c14761db5518",
+            "id": "248e313c-2f36-4b1c-b228-42f18534cabf",
             "source": {
               "cell": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
-              "port": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+              "port": "afccf7f8-a1d4-49f7-8efa-78950ef9adb8"
             },
             "target": {
-              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "cell": "6c333eee-2b66-40fc-9ffe-e7dbb6918fad",
               "port": "bce3ab2f-5b4f-4fc4-8182-5afdc636b32e"
-            },
-            "vertices": [
-              {
-                "x": 140,
-                "y": 270
-              },
-              {
-                "x": 210,
-                "y": 340
-              },
-              {
-                "x": 330,
-                "y": 400
-              }
-            ]
+            }
           },
           {
             "position": {
@@ -595,8 +855,8 @@
                 "text": "public wifi"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -692,9 +952,214 @@
               "description": "External entity",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "df830c5c-c876-4faa-89e2-23ca5cd8d543",
+                  "title": "Fake Public Wi-Fi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "An attacker sets up a fake Wi-Fi hotspot with a similar name. Employees unknowingly connect, exposing credentials.",
+                  "mitigation": "Use VPNs, verify Wi-Fi networks before connecting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "3156d10b-be4a-4d64-8c66-c6ddd9ebfb55",
+                  "title": "Denial of Document Edits",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "A hacker gains unauthorized access to an employee’s account via public Wi-Fi, and there is no log of how or when it happened.",
+                  "mitigation": "Implement strong authentication (MFA), use login attempt notifications, and monitor account activity for suspicious logins.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "c2201608-25d9-4dd5-b36c-7bdec6ddb08e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -90.00000000000001,
+              "y": 175
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Laptop/Tablet"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e9795bd4-9f5a-46a0-8fd6-8379c3256717"
+                },
+                {
+                  "group": "right",
+                  "id": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a5f79e94-b85b-4694-b8c3-9dbb9c27f4d3"
+                },
+                {
+                  "group": "left",
+                  "id": "bce3ab2f-5b4f-4fc4-8182-5afdc636b32e"
+                }
+              ]
+            },
+            "id": "6c333eee-2b66-40fc-9ffe-e7dbb6918fad",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Process",
+              "name": "Laptop/Tablet",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "129cb870-4ecb-4386-bcc7-ef7d9f09f753",
+                  "title": "Shoulder Surfing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Someone sitting next to the employee on the train can see sensitive company data on the screen.",
+                  "mitigation": "Use privacy screen filters, position yourself away from prying eyes, and avoid working on highly sensitive documents in public.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "42e23af7-adb8-4be9-a6ca-db6f2e35b9e0",
+                  "title": "Privilege Escalation via Shared Links",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker gains access to shared files via misconfigured OneDrive links, escalating their privileges to edit or delete files.",
+                  "mitigation": " Restrict file sharing to internal users, enforce access reviews, and disable anonymous sharing links.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
@@ -702,6 +1167,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 16
   }
 }
