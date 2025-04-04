@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Employee",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "MS office online / teams",
@@ -352,6 +352,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -435,7 +436,6 @@
               ]
             },
             "id": "2e8476df-5322-4159-80a9-685cad33c055",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "oneDrive",
@@ -862,6 +862,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -945,7 +946,6 @@
               ]
             },
             "id": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "public wifi",
@@ -1022,6 +1022,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1105,7 +1106,6 @@
               ]
             },
             "id": "6c333eee-2b66-40fc-9ffe-e7dbb6918fad",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Laptop/Tablet",
