@@ -16,7 +16,688 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 50,
+              "y": 140
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Employee"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4d73ca44-bdc3-4f97-ba54-b35b3d252356"
+                },
+                {
+                  "group": "right",
+                  "id": "afccf7f8-a1d4-49f7-8efa-78950ef9adb8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+                },
+                {
+                  "group": "left",
+                  "id": "3579c718-a49d-494a-843b-676d9ff37e0f"
+                }
+              ]
+            },
+            "id": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Employee",
+              "description": "Employee with laptop or phone",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 400,
+              "y": 340
+            },
+            "size": {
+              "width": 190,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "MS office online / teams"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e9795bd4-9f5a-46a0-8fd6-8379c3256717"
+                },
+                {
+                  "group": "right",
+                  "id": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a5f79e94-b85b-4694-b8c3-9dbb9c27f4d3"
+                },
+                {
+                  "group": "left",
+                  "id": "bce3ab2f-5b4f-4fc4-8182-5afdc636b32e"
+                }
+              ]
+            },
+            "id": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "MS office online / teams",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 950,
+              "y": 190
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "oneDrive"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ff1b8074-e5f7-413a-8095-f77c13ba8339"
+                },
+                {
+                  "group": "right",
+                  "id": "442717b0-2ed2-4110-b998-22c39584e0cd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cbde5ede-3fe0-4255-9c5f-bf5bb305bbb7"
+                },
+                {
+                  "group": "left",
+                  "id": "6c3818b4-29c9-47a8-a105-7b855cfe85ae"
+                }
+              ]
+            },
+            "id": "2e8476df-5322-4159-80a9-685cad33c055",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "oneDrive",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Connects via unsecured network",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Connects via unsecured network"
+            ],
+            "id": "27089e1a-f6e7-42dd-aee6-c45cefe21fd2",
+            "source": {
+              "cell": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
+              "port": "afccf7f8-a1d4-49f7-8efa-78950ef9adb8"
+            },
+            "target": {
+              "cell": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
+              "port": "3579c718-a49d-494a-843b-676d9ff37e0f"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 150
+              },
+              {
+                "x": 430,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Loads / Saves documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Loads / Saves documents"
+            ],
+            "id": "1a29bd02-503f-4b3f-a4c0-c160144e444d",
+            "source": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "00c4c5b7-fbfc-417d-a16d-225d43412a5c"
+            },
+            "target": {
+              "cell": "2e8476df-5322-4159-80a9-685cad33c055",
+              "port": "6c3818b4-29c9-47a8-a105-7b855cfe85ae"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Traffic routed through public Wi-Fi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Traffic routed through public Wi-Fi"
+            ],
+            "id": "1b726a19-0b48-4407-a073-ada4d698e288",
+            "source": {
+              "cell": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
+              "port": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+            },
+            "target": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "e9795bd4-9f5a-46a0-8fd6-8379c3256717"
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Accesses MS Word / Excel Online",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Accesses MS Word / Excel Online"
+            ],
+            "id": "742aa0a0-1b72-46a1-a10f-c14761db5518",
+            "source": {
+              "cell": "f8be6253-3ca5-4f67-a4c4-b9a13bbd6620",
+              "port": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+            },
+            "target": {
+              "cell": "2254ebce-3f0e-4b78-bad2-bd1f5a6a8d8f",
+              "port": "bce3ab2f-5b4f-4fc4-8182-5afdc636b32e"
+            },
+            "vertices": [
+              {
+                "x": 140,
+                "y": 270
+              },
+              {
+                "x": 210,
+                "y": 340
+              },
+              {
+                "x": 330,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": 60
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "public wifi"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4d73ca44-bdc3-4f97-ba54-b35b3d252356"
+                },
+                {
+                  "group": "right",
+                  "id": "afccf7f8-a1d4-49f7-8efa-78950ef9adb8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f319135a-0a1d-492d-87bf-9cfd09637d77"
+                },
+                {
+                  "group": "left",
+                  "id": "3579c718-a49d-494a-843b-676d9ff37e0f"
+                }
+              ]
+            },
+            "id": "ce8ec268-5043-4e8e-b500-24a5d2c831a2",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "public wifi",
+              "description": "External entity",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
